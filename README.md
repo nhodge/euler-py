@@ -14,6 +14,7 @@ python problem_<number>.py
 
 ```
 Copyright (C) 2015 Ahmed Charles - acharles@outlook.com
+Copyright (C) 2015 Nadeen Hodge
 Distributed under the Boost Software License, Version 1.0.
    (See accompanying file LICENSE_1_0.txt or copy at
          http://www.boost.org/LICENSE_1_0.txt)
