@@ -2,7 +2,15 @@
 # from the product of two 2-digit numbers is 9009 = 91 × 99.
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
-for x in range(99,1000):
-    for y in range(99,1000):
-        print x * y,
-        break
+def palindrome(n):
+    if n == int(str(n)[::-1]):
+        print n
+    else:
+        pass
+
+
+for x in range(100, 1000):
+    for y in range(100, 1000):
+        n = x * y
+        palindrome(n)
+
