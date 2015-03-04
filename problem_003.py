@@ -3,13 +3,13 @@
 
 from math import sqrt
 
-n = int(sqrt(600851475143))
+n = int(ceil(sqrt(600851475143)))
 
 def factor(x, y):
-    return n ** 2 == x * y
+    return 600851475143 == x * y
 
 for x in range(n, 1, -1):
     for y in range(n, 1, -1):
-        if n ** 2 == x * y:
-            print x, 'times', y, 'equals', n ** 2
+        if x * y == 600851475143
+            print x, 'times', y, 'equals', 600851475143
 
