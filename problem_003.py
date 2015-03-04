@@ -2,15 +2,18 @@
 # What is the largest prime factor of the number 600851475143 ?
 
 from math import sqrt
-from math import ceil
 
-n = int(ceil(sqrt(600851475143)))
+n = int(sqrt(600851475143))
 
-def factor(x, y):
-    return x * y == 600851475143
+def prime(x):
+    y = int(sqrt(x))
+    for x in range(y, 1, -1):
+        if x % y == 0:
+            print x, "is not prime."
+        else:
+            print x, "is prime."
 
 for x in range(n, 1, -1):
-    for y in range(n, 1, -1):
-        if factor(x, y):
-            print x, 'times', y, 'equals', 600851475143
+    if 600851475143 % x == 0:
+        prime(x)
 
