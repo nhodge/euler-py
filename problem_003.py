@@ -7,13 +7,14 @@ n = int(sqrt(600851475143))
 
 def prime(x):
     y = int(sqrt(x))
-    for x in range(y, 1, -1):
-        if x % y == 0:
-            print x, "is not prime."
-        else:
-            print x, "is prime."
+    for i in range(y, 1, -1):
+        if x % i == 0:
+            return False
+    return True
 
 for x in range(n, 1, -1):
     if 600851475143 % x == 0:
-        prime(x)
+        if prime(x):
+            print x
+            break
 
