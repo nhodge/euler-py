@@ -7,16 +7,8 @@
 # Find the difference between the sum of the squares of the first one hundred
 # natural numbers and the square of the sum.
 
-squares = []
-numbers = []
 x = 101
 
-for n in range(1, x):
-    squares.append(n ** 2)
-    sum_of_squares = sum(squares)
-    
-for n in range(1, x):
-    numbers.append(n)
-    square_of_sum = sum(numbers) ** 2
-    
+sum_of_squares = sum(map(lambda n: n ** 2, range(1, x)))
+square_of_sum = sum(range(1, x)) ** 2
 print square_of_sum - sum_of_squares
